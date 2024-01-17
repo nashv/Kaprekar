@@ -1,3 +1,6 @@
+start = 1
+end = 10000
+
 def differenceofsorted(x):
     a = int("".join(sorted(str(x))).strip())
     d = int("".join(sorted(str(x), reverse=True)).strip())
@@ -14,5 +17,5 @@ def differenceofsorted(x):
 
 
 # Loop through all 4-digit numbers
-for n in range(1, 999):
+for n in range(start, end):
     differenceofsorted(n)
